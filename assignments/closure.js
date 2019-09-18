@@ -5,6 +5,24 @@
 // The outer scope can be a parent function, or the top level of the script.
 
 
+function function1(Obj){
+  const item1 = 'string1';
+  const item2 = 'string2';
+  console.log(`${item1} ${item2}`);
+  function function2(Obj2){
+    const item3 = 'string3';
+    console.log (`${item3} ${item2} ${item1}`);
+    function function3(Obj3){
+      const item4 = 'string4';
+      console.log (`${item4} ${item3} ${item2} ${item1}`)
+    }
+    function3('Function3');
+  }
+  function2('Function2');
+}
+function1('Function1');
+
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
